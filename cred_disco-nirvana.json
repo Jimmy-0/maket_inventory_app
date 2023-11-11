@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "disco-nirvana-403601",
+  "private_key_id": "17add51a6fcb45885da442af0b91e4ad5062938b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQoofsQpIQrxQJ\nQSINLQ/VMnUlftj/SesrrwsIVQrWn/B7UVuG7RpKI4hrh8xQpUVDD16chC+ZbnQk\nPHkG70SczRv9F9U0CAbh6oSUYXqH9HyeGpgKCTQd5dCeKhl0FtROTiyysd9wPe7k\nOm+p5O6BleadAAQXYXMgsKH7dScqGAaSYW52GlLCSVwniLdOiGJ+vfLDUvpu8wPw\nGoCk0be/RikbQmz3ijw6F8Tq+3R0R80N5/1cLOKj6uHALyBvI1toNdurjLDCLc/7\n2O0p4XI32dxnGPJoOJMrMiEKAzTt4mUpvu788pV6FiuTJgdeRKNbiQzHW4m3cBk6\noj6gY6C9AgMBAAECggEAJUsrVhGiPRgPyAUZ5SDZ5MSybR0kkcr7DxP++cKH3Wh3\nJy0Gtyc68KPx4Jwu5BqBXfXAFQaGiX7wBonrQQz/+Zhvn5Z+HID3WVhRoDr0T8sM\nOO4thuTxocXowWekkYjzbE9++gKgVP47M3EX6sxDbXl78b6Xz3mKqIKy+bYvB4yw\nEXOc/cg3JGQB66/vcYSZ534UgbQAbI5wc2GnE9mwfsTDNBlY1AdPVFxqhCpoiKui\n6TeEiobUUU68F/QKTxxQSwtlYbB+Cu9alV1/F4JNoyqoU7v4vemRlVK1cHQI6S8Q\n/5MXm8iTp0Q/eaCA8nhZFK1o9DNrl85dRj6v+4bBxwKBgQDIOwIZo7cVYz3ufiGj\neWA67LEIPGl58pryDxy3VyCmOJZo1/yKopnRoK+aRmaQjcjwaMbD9Hglr/zywMuX\nIiwDoLVt48ueHZ83zFDfHd6lYpregKAofCJoLBbZJYrdtBnXmRPopMowUSdJ1QlR\nVsxXcdEPlprDxZhFh5m0jNLo5wKBgQC462aYpY7NeDSPvqEDjjJtTRs5gOHww4CS\nQawlxFwF1N422ng0GhUE6ivphcL0xoU7Hj3h/Eyz6/ubeCBiGYCS9FsWROtdt1Qa\nVGsyNznP/+jWhXldYxJlVodSTCzBZ1ZuRauTMGVNw6OWFNtyZUjuerw6lMkbwwww\nbxjWJyCAuwKBgQCYn7oLFyrAJ8SWXRiBBkzevXp3/6yaot2Osww9iDE/4pRr2G8M\nscKz8lrIKu+VMi4/am5QAbHvcEVMOL83NXn9Tevdlqynmoa5vojKeXcz84R/I+Zw\n1aZYZ3sHDEHcmqK0H1/4jlv8Fm/vLG8MzC+4W+5yhmbz4VMfdKwp3soJcwKBgAOg\n6uR36zNw9mcTsIknUyn951jbhJN64pz8GOqszbl3kdy1sMIk+OCdz7rHWyn+c0LT\ntxcmIkMtkEReuRPzuCgqD1eChrPSEx5pJalYmBPSy7jZ6aXBeezvI7yjrgUlh/al\n+1XqDzLVcfJR+nRmNGYplmP343JeA3E33N7m6aZdAoGAJK0sDWTk/8NRavxBgxEw\nnaepaUJBXYK6ivgKWk1c9UM3Fp9cbNwXbVGsgOoH4towDCdJHR13Aa5tzzkEOBIu\n77sbKONwx3C3nIOxS3yUbuvvMxIqxgop4Cgb330CDo8J833uy/YVot6nIC5DdVbo\nqDMWMZw/GUkFKkph53i805E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "accmarket@disco-nirvana-403601.iam.gserviceaccount.com",
+  "client_id": "102911356891432741480",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/accmarket%40disco-nirvana-403601.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
