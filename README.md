@@ -1,0 +1,1 @@
+# maket_inventory_app
