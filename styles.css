@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: beige;
+}
+
+
+.banner {
+    position: absolute; /* Set the position of the Finance Helper container to absolute */
+            
+    top: 0;
+    background-color:rgba(0, 121, 146, 0.8);  /* Set the background color to your preference */
+    color: #fff;  /* Set the text color to contrast with the background */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.banner h1 {
+    margin: 0;  /* Remove default margin for the heading */
+    font-size: 40px;  /* Adjust the font size as needed */
+}
+
+.banner a {
+    color: inherit; /* Set the default color */
+    text-decoration: none; /* Remove underline from the anchor */
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+}
+
+.banner a:hover {
+    color: purple; /* Change the color to purple on hover */
+}
+
+.input-section-android {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -200px;
+}
+
+
+.input-section {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+}
+
+.number-pad-ios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+}
+
+
+.number-button {
+    /* width: 100%;
+    padding: 15px;
+    font-size: 18px; */
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: rgba(0, 121, 146, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.number-button-ios {
+    width: 100%; /* 33.33% of the container width with a little gap */
+    padding: 24px; /* Adjust the padding as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: rgba(0, 121, 146, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.number-button-index {
+    /* width: 100%;
+    padding: 15px;
+    font-size: 18px; */
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 121, 146, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.bigger-button {
+    flex: 1; /* Each button takes equal width within the group */
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(255, 94, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.green-button {
+    flex: 1; /* Each button takes equal width within the group */
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(23, 90, 3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.bigger-button-ios {
+    /* Adjust styles for the bigger button */
+    width: calc(100% * 2 + 20px); /* Twice the width of a regular button plus extra padding */
+    height: 60px; /* Adjust the height as needed */
+    padding: 20px; /* Extra padding for a larger button */
+    font-size: 24px; /* Larger font size */
+    background-color: #ff0000;  /* Red color for the bigger button */
+}
+
+.bigger-button:hover {
+    background-color: #c0392b;
+}
+
+
+.number-button:hover {
+    background-color: #2980b9;
+}
+
+.number-pad-container {
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
