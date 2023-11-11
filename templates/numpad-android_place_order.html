@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>PLACE ORDER</title>
+</head>
+<body>
+<body class = "place_order_body">
+
+<div class="banner_PO">
+    <a href="/">
+        <h1>PLACE ORDER</h1>
+    </a>
+</div>
+
+
+<div class="input-section-android">
+    <input type="text" id="barcode-number" placeholder="條碼" inputmode="numeric" >
+    <input type="text" id="pdt-name" placeholder="name" readonly>
+    <input type="text" id="item-number" placeholder="item number" readonly>
+    <input type="text" id="remain" placeholder="存量" inputmode="numeric" readonly>
+    <input type="text" id="amount" placeholder="妳要下單的數量" inputmode="numeric">
+
+</div>
+
+<div class="number-pad-container">
+    <div class="number-pad">        
+        <button class="green-button" onclick="appendToAmount('-')">減號</button>
+        <button class="bigger-button" onclick="resetForm()">Reset</button>
+        <button class="number-button-PO" onclick="submitFormPo()">↵</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", init);
+</script> -->
+
+
+</body>
+</html>

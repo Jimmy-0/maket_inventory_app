@@ -23,13 +23,21 @@ amount_value = ""
 def index():
     return render_template('index.html')
 
-@app.route('/iphone')
-def numpad_iphone():
+@app.route('/ios')
+def numpad_ios():
     return render_template('numpad-ios.html')
+
+@app.route('/ios_place_order')
+def numpad_ios_po():
+    return render_template('numpad-ios_place_order.html')
 
 @app.route('/android')
 def numpad_android():
     return render_template('numpad-android.html')
+
+@app.route('/android_place_order')
+def numpad_android_po():
+    return render_template('numpad-android_place_order.html')
 
 @app.route('/update_values', methods=['POST'])
 def update_values():
@@ -104,7 +112,45 @@ def get_values(barcode):
 
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)}), 500
+
+@app.route('/place_order', methods=['POST'])
+def place_order():
+    try:
+        data = request.get_json()
+        # Get values from the frontend
+        barcode_number = data.get('barcode_number', 'NO barcode number')
+        # print(f"remaining hash map from the update_values : {remaining_map}")
+        item_number = data.get('item_number',"where is the item number")
+        place_order_amount = data.get('amount', 'NONONONONONONON amount')
+        # print(f' HEE amount_value : {amount_value} ')
+        
+        res = None
+        with lock:
+            try:
+                cell = sheet.find(barcode_number)
+                if cell is not None:
+                    row_index = cell.row
+                    sheet.update_cell(row_index, 5, place_order_amount)
+                else:
+                    print(f"CREATE A NEW ONE FOR THIS")
+                    print(f"{barcode_number} :  {place_order_amount}")
+                    sheet.append_row([str(barcode_number),'','','',int(place_order_amount)])
+            except Exception as e:
+                print(f"Error: {e}")
+                return jsonify({'status': 'error', 'message': str(e)}), 500
+
+        return jsonify({
+            'barcode': barcode_number,
+            'place_order_amount': place_order_amount,
+            'status': 'success'
+            })
     
+    except ValueError as ve:
+        return jsonify({'status': 'error', 'message': str(ve)}), 400  # Return 400 Bad Request for validation errors
+
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}),500
+
 
 if __name__ == '__main__':
     # os.system('gunicorn -w 4 -b 0.0.0.0:8080 --log-level debug app:app')

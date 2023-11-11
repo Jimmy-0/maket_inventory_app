@@ -44,9 +44,9 @@ function sendBarcodeToBackend(barcode) {
         return response.json();
     })
     .then(data => {
-        // console.log('yoo',data);  // Log the response from the backend
-        const remainElement = document.getElementById('remain');
-        remainElement.value = String(data.remain_first);
+        console.log('yoo',data);  // Log the response from the backend
+        
+        document.getElementById('remain').value = String(data.remain_first);
         document.getElementById('item-number').value = String(data.item_number);
         document.getElementById('pdt-name').value = String(data.product_name);
     })
@@ -104,14 +104,58 @@ function submitForm() {
         document.getElementById('amount').value = '';
         // console.log('Additional Information:', 'You can add more logs here if needed');
     })
-    .catch(error => console.error('Error:', error));
+   .catch(error => console.error('Error:', error));
 
     resetForm();
     document.getElementById('barcode-number').focus();
 }
 
+function submitFormPo(){
+    const barcodeNumber = document.getElementById('barcode-number').value;
+    const amount = document.getElementById('amount').value;
+    const itemNumber = document.getElementById('item-number').value;
+    const parsedAmount = parseFloat(amount);
+    if (isNaN(parsedAmount)) {
+        console.error('Invalid amount. Please enter a valid number.');
+        return;
+    }
+    fetch('/place_order', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            barcode_number: barcodeNumber,
+            amount: amount,
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        try {
+            const parsedData = JSON.parse(JSON.stringify(data));
+            // console.log('Parsed Data: ', parsedData)
+             // Update 'remain' section in the frontend
+            // const remainElement = document.getElementById('remain');
+            // remainElement.value = String(parsedData.amount_second);
 
+        } catch(error){
+            console.error('Error Parsing: ',data);
+        }
+        
+        document.getElementById('amount').value = '';
+        // console.log('Additional Information:', 'You can add more logs here if needed');
+    })
+   .catch(error => console.error('Error:', error));
+
+    resetForm();
+    document.getElementById('barcode-number').focus();
+
+}
 
 window.addEventListener('beforeunload', function () {
     resetForm();
 });
+
+function redirectToPage(page) {
+    window.location.href = page;
+};

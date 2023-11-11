@@ -10,6 +10,48 @@ body {
 }
 
 
+.place_order_body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(73, 109, 90);
+}
+
+.banner_PO {
+    position: absolute; /* Set the position of the Finance Helper container to absolute */
+            
+    top: 0;
+    background-color:rgba(146, 102, 0, 0.8);  /* Set the background color to your preference */
+    color: #fff;  /* Set the text color to contrast with the background */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.banner_PO h1 {
+    margin: 0;  /* Remove default margin for the heading */
+    font-size: 40px;  /* Adjust the font size as needed */
+}
+
+.banner_PO a {
+    color: inherit; /* Set the default color */
+    text-decoration: none; /* Remove underline from the anchor */
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+}
+
+.banner_PO a:hover {
+    color: purple; /* Change the color to purple on hover */
+}
+
+
+
+
 .banner {
     position: absolute; /* Set the position of the Finance Helper container to absolute */
             
@@ -100,6 +142,20 @@ body {
     transition: background-color 0.3s;
 }
 
+.number-button-PO {
+    width: 100%; /* 33.33% of the container width with a little gap */
+    padding: 24px; /* Adjust the padding as needed */
+    font-size: 35px; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: rgba(16, 190, 221, 0.8);
+    font-weight: bold; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 
 .number-button-index {
     /* width: 100%;
@@ -144,6 +200,18 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.po-button {
+    flex: 2; /* Each button takes equal width within the group */
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(114, 49, 183);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 .bigger-button-ios {
     /* Adjust styles for the bigger button */
     width: calc(100% * 2 + 20px); /* Twice the width of a regular button plus extra padding */
@@ -152,15 +220,25 @@ body {
     font-size: 24px; /* Larger font size */
     background-color: #ff0000;  /* Red color for the bigger button */
 }
-
+.green-button:hover {   
+    background-color: rgb(12, 45, 3);
+}
 .bigger-button:hover {
     background-color: #c0392b;
 }
 
+.po-button:hover {
+    background-color:  rgb(79, 33, 129);
+}
 
 .number-button:hover {
     background-color: #2980b9;
 }
+
+.number-button-ios:hover {
+    background-color: #2980b9;
+}
+
 
 .number-pad-container {
     /* grid-template-columns: repeat(2, 1fr); */
