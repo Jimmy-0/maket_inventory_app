@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+<body>
+<div class="banner">
+    <h1>ACC Market</h1>
+</div>
+<div>
+    <h1>Device? 🤔</h1>
+</div>
+<div class="number-pad-container">
+    <div class="number-pad">
+        <button class="number-button-index" onclick="redirectToPage('/iphone')">iOS</button>
+        <button class="number-button-index" onclick="redirectToPage('/android')">Android</button>
+        
+    </div>
+</div>
+<script>
+    function redirectToPage(page) {
+            window.location.href = page;
+    }
+</script>
+
+
+</body>
+</html>

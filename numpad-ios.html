@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>ACC INVENTORY</title>
+</head>
+<body>
+
+<div class="banner">
+    <a href="/">
+        <h1>ACC Market</h1>
+    </a>
+</div>
+
+
+<div class="input-section">
+    <input type="text" id="barcode-number" placeholder="條碼" inputmode="numeric" >
+    <input type="text" id="amount" placeholder="數量" inputmode="numeric">
+    <input type="text" id="remain" placeholder="存量" inputmode="numeric" readonly>
+    <input type="text" id="pdt-name" placeholder="name" readonly>
+    <input type="text" id="item-number" placeholder="item number" readonly>
+</div>
+
+<div class="number-pad-container">
+    <div class="number-pad-ios">
+        <button class="number-button-ios" onclick="appendToAmount('1')">1</button>
+        <button class="number-button-ios" onclick="appendToAmount('2')">2</button>
+        <button class="number-button-ios" onclick="appendToAmount('3')">3</button>
+        <button class="number-button-ios" onclick="appendToAmount('4')">4</button>
+        <button class="number-button-ios" onclick="appendToAmount('5')">5</button>
+        <button class="number-button-ios" onclick="appendToAmount('6')">6</button>
+        <button class="number-button-ios" onclick="appendToAmount('7')">7</button>
+        <button class="number-button-ios" onclick="appendToAmount('8')">8</button>
+        <button class="number-button-ios" onclick="appendToAmount('9')">9</button>
+        <button class="bigger-button" onclick="resetForm()">Reset</button>
+        <button class="number-button-ios" onclick="appendToAmount('0')">0</button>
+        <button class="number-button-ios" onclick="submitForm()">↵</button>
+        <button class="green-button " onclick="appendToAmount('-')">減號</button>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", init);
+</script> -->
+
+
+</body>
+</html>
