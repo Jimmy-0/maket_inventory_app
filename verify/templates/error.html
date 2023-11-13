@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>File Upload</title>
+</head>
+<div class="banner">
+    <h1>ACC Account 🎇 Market Helper </h1>
+</div>
+<body>
+    <h1>💔</h1>
+    <form>
+    <h2>Don't give up 🥂٩(ˊᗜˋ*)و</h2>
+    <p>{{ error }}</p>
+    <button id="HomeButton" type="button">Home</button>
+    </form>
+    <script>
+        // Set the home page URL dynamically in JavaScript
+        const homePageUrl = "{{ url_for('index') }}";
+
+        // Add a click event listener to the button
+        document.getElementById('HomeButton').addEventListener('click', function() {
+            // Redirect to the home page
+            window.location.href = homePageUrl;
+        });
+    </script>
+</body>
+</html>

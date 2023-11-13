@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Result</title>
+</head>
+<div class="banner">
+    <h1>ACC Account 🎇 Market Helper </h1>
+
+</div>
+<body>
+    <h1>🎉</h1>
+    <form>
+    <h2>Success ! Please click to download the result.</h2>
+    <button id="downloadButton" type="button">Download</button>
+    </form>
+    <script>
+        // Set the download URL dynamically in JavaScript
+        const downloadUrl = "{{ url_for('download_result') }}";
+
+        // Add a click event listener to the button
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Redirect to the Flask route that triggers the download
+            window.location.href = downloadUrl;
+        });
+    </script>
+</body>
+</html>

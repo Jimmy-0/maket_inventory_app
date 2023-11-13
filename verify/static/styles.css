@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: beige;
+}
+
+.banner {
+    position: absolute; /* Set the position of the Finance Helper container to absolute */
+            
+    top: 0;
+    background-color:rgba(0, 121, 146, 0.8);  /* Set the background color to your preference */
+    color: #fff;  /* Set the text color to contrast with the background */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.banner h1 {
+    margin: 0;  /* Remove default margin for the heading */
+    font-size: 40px;  /* Adjust the font size as needed */
+}
+
+.banner a {
+    color: inherit; /* Set the default color */
+    text-decoration: none; /* Remove underline from the anchor */
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+}
+
+.banner a:hover {
+    color: purple; /* Change the color to purple on hover */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 20px solid  rgb(202, 202, 158);
+    padding: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 235, 181); 
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+input[type="file"] {
+    font-size: 24px; /* Increase the font size for the button text */
+    padding: 10px 20px; /* Adjust padding to make the button bigger */
+    border-radius: 5px;
+    background-color: #7fc9a8;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #a74993;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
