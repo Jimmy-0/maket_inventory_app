@@ -1,4 +1,4 @@
-# Inventory Management System
+# [Inventory Management System](https://disco-nirvana-403601.de.r.appspot.com)
 
 This is a simple Flask web application for managing inventory and placing orders. It utilizes Google Sheets as a backend to store and update inventory data.
 
